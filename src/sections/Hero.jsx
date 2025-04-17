@@ -2,8 +2,27 @@ import React from "react";
 import { words } from "../constants/constants";
 import Button from "../components/Button";
 import HeroModel from "../components/hero_model/HeroModel";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Hero = () => {
+  useGSAP(() => {
+    gsap.fromTo(
+      ".hero-text h1",
+      {
+        y: 50,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        stagger: .3,
+        duration: 1,
+        ease: "power2.inOut",
+      }
+    );
+  });
+
   return (
     <section id="hero" className="relative overflow-hidden">
       <div className="absolute z-10 left-0 top-0">
@@ -39,7 +58,7 @@ const Hero = () => {
               <h1>Digital Experiences</h1>
             </div>
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
+              <p className="text-white-50 md:text-xl md:w-2/5 relative z-10 pointer-events-none">
                 Hi, I'm <strong>Saurabh</strong>, a passionate developer based
                 in India. I specializes in creating seamless digital
                 experiences. Let's build something amazing together.
