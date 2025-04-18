@@ -216,6 +216,14 @@ section {
   .gradient-edge {
     @apply w-36 h-full absolute bottom-0 z-20;
   }
+
+  .card-border {
+    @apply border border-black-50 bg-black-100;
+  }
+
+  .marquee-item {
+    @apply md:w-40 w-32;
+  }
 }
 
 .slide {

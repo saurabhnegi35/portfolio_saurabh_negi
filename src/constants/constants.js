@@ -66,4 +66,37 @@ const logoIconsList = [
   },
 ];
 
-export { words, counterItems, navLinks, logoIconsList };
+const abilities = [
+  {
+    imgPath: "/images/clean-code.png",
+    title: "Clean & Scalable Code",
+    desc: "Writing modular, maintainable code across frontend and backend to ensure long-term scalability.",
+  },
+  {
+    imgPath: "/images/system-design.png",
+    title: "System Design Thinking",
+    desc: "Designing robust architectures with attention to performance, security, and scalability.",
+  },
+  {
+    imgPath: "/images/communication.png",
+    title: "Clear Communication",
+    desc: "Translating complex tech into clear ideas — great for team collaboration and client updates.",
+  },
+  {
+    imgPath: "/images/deadline.png",
+    title: "On-Time Delivery",
+    desc: "Reliable execution with a strong focus on hitting deadlines without compromising quality.",
+  },
+  {
+    imgPath: "/images/idea.png",
+    title: "Problem Solving & Debugging",
+    desc: "Quickly identifying and fixing issues to keep projects moving smoothly.",
+  },
+  {
+    imgPath: "/images/fullstack.png",
+    title: "Full-Stack Expertise",
+    desc: "Building seamless experiences from database to UI — using React, Node.js, MongoDB, and more.",
+  },
+];
+
+export { words, counterItems, navLinks, logoIconsList, abilities };
