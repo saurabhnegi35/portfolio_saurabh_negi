@@ -47,7 +47,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div ref={sectionRef} id="project" className="app-showcase px-10">
+    <div ref={sectionRef} id="projects" className="app-showcase px-10">
       <div className="w-full">
         <div className="showcaselayout">
           <div ref={project1Ref} className="first-project-wrapper">

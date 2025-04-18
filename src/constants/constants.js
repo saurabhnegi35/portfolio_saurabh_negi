@@ -11,4 +11,23 @@ const counterItems = [
   { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
-export { words, counterItems };
+const navLinks = [
+  {
+    name: "Projects",
+    link: "#projects",
+  },
+  {
+    name: "Experience",
+    link: "#experience",
+  },
+  {
+    name: "Skills",
+    link: "#skills",
+  },
+  {
+    name: "Testimonials",
+    link: "#testimonials",
+  },
+];
+
+export { words, counterItems, navLinks };
