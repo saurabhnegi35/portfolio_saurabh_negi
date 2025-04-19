@@ -99,4 +99,63 @@ const abilities = [
   },
 ];
 
-export { words, counterItems, navLinks, logoIconsList, abilities };
+const expCards = [
+  {
+    review:
+      "Saurabh played a crucial role in strengthening our network infrastructure and improving overall security. His attention to detail and ability to respond to threats in real-time made a lasting impact.",
+    imgPath: "/images/hitachi.png",
+    logoPath: "/images/hitachi_logo.webp",
+    title: "Network Security Engineer",
+    date: "January 2022 – July 2022",
+    company: "Hitachi Systems India",
+    responsibilities: [
+      "Managed and monitored network security systems, firewalls, and threat detection tools.",
+      "Implemented security protocols to safeguard critical enterprise infrastructure.",
+      "Collaborated with the cybersecurity team to respond to and mitigate threats.",
+    ],
+  },
+  {
+    review:
+      "As a Teaching Assistant, Saurabh was incredibly supportive and knowledgeable. Students consistently appreciated his clarity in explaining complex full stack concepts.",
+    imgPath: "/images/logo-coding-ninjas.svg",
+    logoPath: "/images/coding-ninjas-logo.png",
+    title: "Full Stack Development – Teaching Assistant",
+    date: "January 2023 – May 2023",
+    company: "Coding Ninjas",
+    responsibilities: [
+      "Guided students through full stack development concepts including MERN stack.",
+      "Assisted in debugging code and providing solutions during live sessions.",
+      "Reviewed projects and ensured students followed best coding practices.",
+    ],
+  },
+  {
+    review:
+      "Saurabh was an integral part of our dev team. His skills in both frontend and backend allowed us to ship scalable web solutions quickly and efficiently.",
+    imgPath: "",
+    logoPath: "/images/gurucool-logo.png",
+    title: "Full Stack Developer",
+    date: "May 2023 – January 2024",
+    company: "Drall and Dholiya Pvt Ltd",
+    responsibilities: [
+      "Developed and deployed responsive web applications using the MERN stack.",
+      "Worked closely with UI/UX teams to implement pixel-perfect interfaces.",
+      "Integrated third-party APIs and optimized backend logic for performance.",
+    ],
+  },
+  {
+    review:
+      "As a freelancer, Saurabh has delivered top-notch solutions for various clients. His ability to understand client needs and turn them into real products is unmatched.",
+    imgPath: "",
+    logoPath: "/images/freelance.png",
+    title: "Freelance Full Stack Developer",
+    date: "March 2024 – Present",
+    company: "Freelance",
+    responsibilities: [
+      "Built full stack solutions for multiple clients in diverse industries.",
+      "Handled end-to-end development, from requirements gathering to deployment.",
+      "Implemented secure authentication systems, dashboards, and custom APIs.",
+    ],
+  },
+];
+
+export { words, counterItems, navLinks, logoIconsList, abilities, expCards };

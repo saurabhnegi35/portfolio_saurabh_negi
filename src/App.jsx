@@ -4,6 +4,7 @@ import Projects from "./sections/Projects";
 import Navbar from "./components/Navbar";
 import LogoSection from "./sections/LogoSection";
 import FeatureCards from "./sections/FeatureCards";
+import ExperienceSection from "./sections/ExperienceSection";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Projects />
       <LogoSection />
       <FeatureCards />
+      <ExperienceSection />
     </div>
   );
 };

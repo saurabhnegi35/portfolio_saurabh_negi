@@ -17,7 +17,7 @@ const Hero = () => {
       {
         y: 0,
         opacity: 1,
-        stagger: .3,
+        stagger: 0.3,
         duration: 1,
         ease: "power2.inOut",
       }
@@ -59,11 +59,11 @@ const Hero = () => {
               <h1>Digital Experiences</h1>
             </div>
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              <p className="text-white-50 md:text-xl md:w-2/5 relative z-10 pointer-events-none">
-                Hi, I'm <strong>Saurabh</strong>, a passionate developer based
-                in India. I specializes in creating seamless digital
-                experiences. Let's build something amazing together.
-              </p>
+              {/* <p className="text-white-50 md:text-xl md:w-2/5 relative z-10 pointer-events-none"> */}
+              Hi, I'm <strong>Saurabh</strong>, a passionate developer based in
+              India. I specializes in creating seamless digital experiences.
+              Let's build something amazing together.
+              {/* </p> */}
             </p>
             <Button
               className="md:w-80 md:h-16 w-60 h-12"
