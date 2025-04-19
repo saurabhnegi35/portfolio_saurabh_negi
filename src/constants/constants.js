@@ -158,4 +158,60 @@ const expCards = [
   },
 ];
 
-export { words, counterItems, navLinks, logoIconsList, abilities, expCards };
+const techStackImgs = [
+  {
+    name: "Full Stack MERN Developer",
+    imgPath: "/images/MERN-logo.png",
+  },
+  {
+    name: "RESTful API Architect",
+    imgPath: "/images/rest-api-logo.png",
+  },
+  {
+    name: "Socket.IO & Real-time Apps",
+    imgPath: "/images/socket-io-logo.png",
+  },
+  {
+    name: "Authentication & Security",
+    imgPath: "/images/lock.png",
+  },
+];
+
+const techStackIcons = [
+  {
+    name: "Frontend Engineer (React)",
+    modelPath: "/models/react_logo-transformed.glb",
+    scale: 1,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Backend Engineer (Node.js)",
+    modelPath: "/models/node-transformed.glb",
+    scale: 5,
+    rotation: [0, -Math.PI / 2, 0],
+  },
+
+  {
+    name: "3D Developer (Three.js)",
+    modelPath: "/models/three.js-transformed.glb",
+    scale: 0.05,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Project Version Control (Git)",
+    modelPath: "/models/git-svg-transformed.glb",
+    scale: 0.05,
+    rotation: [0, -Math.PI / 4, 0],
+  },
+];
+
+export {
+  words,
+  counterItems,
+  navLinks,
+  logoIconsList,
+  abilities,
+  expCards,
+  techStackImgs,
+  techStackIcons,
+};
