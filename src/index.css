@@ -44,7 +44,7 @@ section {
   }
 
   .padding-x-lg {
-    @apply px-10 md:px-20;
+    @apply px-10 md:px-40;
   }
 
   .section-padding {
@@ -279,6 +279,30 @@ section {
 
   .tech-icon-wrapper {
     @apply flex justify-center items-center w-52 h-60 relative;
+  }
+
+  .footer {
+    @apply my-10 md:mt-20 mt-10 text-white-50 px-5 md:px-20 xl:px-20 flex items-center justify-center;
+
+    .footer-container {
+      @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0 w-full;
+    }
+
+    p {
+      @apply text-center md:text-start cursor-pointer;
+    }
+
+    .socials {
+      @apply flex items-center justify-center gap-5;
+
+      .icon {
+        @apply border  border-black-50 bg-white-50 flex justify-center items-center rounded-xl size-10 md:size-12 cursor-pointer transition-all duration-500 hover:bg-gray-300;
+      }
+
+      img {
+        @apply inline-block w-8;
+      }
+    }
   }
 
   form {

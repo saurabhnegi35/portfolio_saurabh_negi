@@ -205,6 +205,21 @@ const techStackIcons = [
   },
 ];
 
+const socialImgs = [
+  {
+    name: "Github",
+    imgPath: "/images/github.png",
+  },
+  {
+    name: "x",
+    imgPath: "/images/x.png",
+  },
+  {
+    name: "linkedin",
+    imgPath: "/images/linkedin.png",
+  },
+];
+
 export {
   words,
   counterItems,
@@ -214,4 +229,5 @@ export {
   expCards,
   techStackImgs,
   techStackIcons,
+  socialImgs,
 };
