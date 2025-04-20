@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import TitleHeader from "../components/TitleHeader";
 import ContactExperience from "../components/ContactExperience";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,7 +11,26 @@ const Contact = () => {
   });
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
-  const handleSubmit = () => {};
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      await emailjs.sendForm(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      );
+
+      // Reset form and stop loading
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
