@@ -50,7 +50,7 @@ const Projects = () => {
     <div ref={sectionRef} id="projects" className="app-showcase md:px-50 px-5">
       <div className="w-full">
         <div className="showcaselayout">
-          <div ref={project1Ref} className="first-project-wrapper">
+          <div ref={project1Ref} href="" className="first-project-wrapper">
             <div className="image-wrapper">
               <img src="/images/project1.png" alt="Uber-Clone" />
             </div>
@@ -67,7 +67,11 @@ const Projects = () => {
           </div>
 
           <div className="project-list-wrapper overflow-hidden">
-            <div ref={project2Ref} className="project">
+            <div
+              ref={project2Ref}
+              href="https://zentry-clone-frontend.vercel.app/"
+              className="project"
+            >
               <div className="image-wrapper bg-[#ffefdb]">
                 <img src="/images/project2.png" alt="Zentry-Clone" />
               </div>
